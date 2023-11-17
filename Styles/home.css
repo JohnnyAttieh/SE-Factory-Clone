@@ -32,6 +32,7 @@
     border-radius: 20%;
     opacity: 90%;
     background-color: rgb(55, 55, 55);
+    z-index: 3;
 }
 
 .left-hero{
@@ -43,7 +44,7 @@
 .overlay{
     width: 100%;
     height: 100%;
-    background-color: rgba(40, 238, 167, 0.85);
+    background-color: rgba(40, 238, 167, 0.93);
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -102,6 +103,7 @@
     height: 50px;
     color: white;
     background-color: rgba(0,0,0,0.7);
+    cursor: pointer;
 }
 
 .overlay-right{
@@ -167,6 +169,7 @@
     height: 50px;
     color: black;
     background-color:white;
+    cursor: pointer;
 }
 
 
@@ -230,6 +233,13 @@
    
 }
 
+.gray{
+    background-color: gray;
+}
+
+.black-circle{
+    background-color:   rgb(50, 49, 49);
+}
 .green{
     background-color: rgba(40, 238, 167, 0.85);
     margin-right: 10px;
@@ -365,4 +375,167 @@ iframe{
 .trained-style{
     font-size: large;
     margin-left: 50px;
+}
+
+.programs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-top: 20px;
+    background-color: rgb(255, 196, 0);
+}
+
+.circles-div{
+    width: 10%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* padding: 30px; */
+    align-items: center;
+}
+
+/* .programs > header > h2 >span{
+    font-size: 200px;
+    background-color: rgb(50, 49, 49);
+} */
+
+.edit{
+    background-color: rgb(75, 74, 74)
+
+}
+
+.program-header{
+    margin-top: 50px;
+    padding: 10px;
+    background-color: rgb(75, 74, 74)
+
+}
+
+.programs-menu{
+    font-weight: 900;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-self: self-start;
+    margin-left: 7.1%;
+    width: 40%;
+    height: 50px;
+    margin-top: 100px;
+}
+
+.programs-info{
+    width: 80%;
+    height: 60%;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    background-color:rgb(75, 74, 74);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.FCS-background{
+    color:rgb(255, 196, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: rgb(75, 74, 74);
+    width: 25%;
+    height: 100%;
+}
+
+.program-explain{
+    margin-left: 40px;
+    color: white;
+}
+.program-explain > p:nth-child(1){
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.program-explain > p:nth-child(2){
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.FCS-image{
+    background-image: url('/Assets/images/fcs.png'); 
+    border-radius: 15px;
+    width: 30%;
+    height: 90%;
+    margin-left: 150px;
+
+}
+
+.program-explain > p >span{
+    color: rgb(255, 196, 0);
+}
+
+.button-container{
+    height:50px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.button-left-container{
+    width: 40%;
+    background-color: rgba(0,0,0,0.7);
+    margin-left: 10px;
+    color: white;
+    word-spacing: 2px;
+    padding: 10px;
+}
+
+.button-left-container > span:nth-child(2){
+    color: rgb(255, 196, 0);
+    font-weight: 600;
+}
+
+.button-right{
+    background-color: rgba(0,0,0,0.7);
+    width: 50%;
+    text-align: end;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.button-right > button{
+    background: none;
+    font-size: medium;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.hidden{
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+
+.add-menu{
+    position: absolute;
+    background-color:rgba(35, 35, 35, .85);
+    width: 100%;
+    height:100%;
+    z-index: 2;
+
 }
